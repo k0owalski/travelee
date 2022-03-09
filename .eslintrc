@@ -1,0 +1,24 @@
+{
+    "extends": [
+        "airbnb",
+        "prettier"
+    ],
+    "env": {
+        "jest": true
+    },
+    "globals": {
+        "document": true
+    },
+    "rules": {
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "react/jsx-one-expression-per-line": "off"
+    }
+}

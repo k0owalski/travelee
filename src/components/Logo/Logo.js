@@ -1,6 +1,9 @@
+import React from 'react';
 import styled from 'styled-components';
 
-const Logo = styled.div`
+import LogoImage from 'img/Logo.png';
+
+const StyledLogo = styled.div`
   display: flex;
 
   justify-content: center;
@@ -19,6 +22,21 @@ const Logo = styled.div`
 
     margin: 0 0.5rem 0 0;
   }
+
+  @media screen and (max-width: 480px) {
+    font-size: 2.5rem;
+
+    & > img {
+      height: 2.5rem;
+    }
+  }
 `;
+
+const Logo = () => (
+  <StyledLogo>
+    <img src={LogoImage} alt="Logo" />
+    <span>Travel</span>ee
+  </StyledLogo>
+);
 
 export default Logo;

@@ -10,7 +10,13 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: 'Quicksand', sans-serif;
-        color: #fff;
+        color: #333;
+
+        overflow-x: hidden;
+
+        @supports (backdrop-filter: none) {
+            color: #fff;
+        }
     }
 
     #root {

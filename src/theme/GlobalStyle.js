@@ -25,6 +25,10 @@ const GlobalStyle = createGlobalStyle`
         padding: 9rem 0 0;
         background: linear-gradient(112.68deg, rgba(244, 43, 79, 0.56) 0%, rgba(243, 148, 61, 0.56) 100%), url("${backgroundImage}") no-repeat fixed bottom;
         background-size: cover;
+
+        @media screen and (max-width: 480px) {
+            padding: 4rem 0 0;
+        }
     }
 `;
 
